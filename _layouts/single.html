@@ -1,0 +1,104 @@
+---
+layout: default
+---
+<!-- Start Main content -->
+<main class="bg-grey pb-30">
+
+    <div class="container single-content">
+        <div class="entry-header pt-80 pb-30 mb-20">
+            <div class="row">
+                <div class="col-md-6 mb-md-0 mb-sm-3">
+                    <figure class="mb-0 mt-lg-0 mt-3 border-radius-5">
+                        <img class=" border-radius-5" src="http://via.placeholder.com/1000x600" alt="">
+                    </figure>                        
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <div class="post-content">
+                        <div class="entry-meta meta-0 mb-15 font-small">
+                            <a href="category.html"><span class="post-cat position-relative text-info">Travel tips</span></a>
+                            <a href="category.html"><span class="post-cat position-relative text-success">Food</span></a>
+                        </div>
+                        <h1 class="entry-title mb-30 font-weight-900">
+                            {{ page.title }}
+                        </h1>
+                        {% unless page.excerpt %}
+                        <p class="excerpt mb-30">
+                            {{ page.excerpt }}
+                        </p>
+                        {% endunless %}
+                        {% unless page.author %}
+                        <div class="entry-meta align-items-center meta-2 font-small color-muted">
+                            <p class="mb-5">
+                                <a class="author-avatar" href="#"><img class="img-circle" src="http://via.placeholder.com/300x300" alt=""></a>
+                                By <a href="mailto:{{ page.author_email }}"><span class="author-name font-weight-bold">{{ page.author }}</span></a>
+                            </p>
+                            <span class="mr-10"> 15 April 2020</span>
+                            <span class="has-dot"> 8 mins read</span>
+                        </div>
+                        {% endunless %}
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+        <!--end single header-->
+        <!--figure-->
+        <article class="entry-wraper mb-50">
+            <style>
+                article p {
+                    text-align: justify;
+                }
+            </style>
+            {% unless page.excerpt %}
+            <div class="excerpt mb-30">
+                <p>{{ page.excerpt }}</p>
+            </div>
+            {% endunless %}
+            <div class="entry-main-content dropcap wow fadeIn animated">
+                {{ content }}
+            </div>
+            <div class="entry-bottom mt-50 mb-30 wow fadeIn animated">
+                <div class="tags">
+                    <span>Tags: </span>
+                    {% for tag in page.tags %}
+                    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+                    <a href="{{site.baseurl}}/tags/#{{tag|slugize}}" rel="tag">{{tag}}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="single-social-share clearfix wow fadeIn animated">
+                <div class="entry-meta meta-1 font-small color-grey float-left mt-10">
+                    <span class="hit-count mr-15"><i class="elegant-icon icon_comment_alt mr-5"></i>182 comments</span>
+                    <span class="hit-count mr-15"><i class="elegant-icon icon_like mr-5"></i>268 likes</span>
+                    <span class="hit-count"><i class="elegant-icon icon_star-half_alt mr-5"></i>Rate: 9/10</span>
+                </div>
+                <ul class="header-social-network d-inline-block list-inline float-md-right mt-md-0 mt-4">
+                    <li class="list-inline-item text-muted"><span>Share this: </span></li>
+                    <li class="list-inline-item"><a class="social-icon fb text-xs-center" target="_blank" href="{{ site.facebook }}"><i class="elegant-icon social_facebook"></i></a></li>
+                    <li class="list-inline-item"><a class="social-icon tw text-xs-center" target="_blank" href="{{ site.twitter }}"><i class="elegant-icon social_twitter "></i></a></li>
+                    <li class="list-inline-item"><a class="social-icon ig text-xs-center" target="_blank" href="{{ site.instagram }}"><i class="elegant-icon social_instagram "></i></a></li>
+                </ul>
+            </div>
+            <!--author box-->
+            <div class="author-bio p-30 mt-50 border-radius-10 bg-white wow fadeIn animated">
+                <div class="author-image mb-30">
+                    <a href="{{ site.url }}"><img src="{{ page.smallest_image }}" alt="" class="avatar"></a>
+                </div>
+                <div class="author-info">
+                    <h4 class="font-weight-bold mb-20"><span class="vcard author"><span class="fn"><a href="{{ page.author }}" title="Posted by {{ page.author }}" rel="author">{{ page.author }}</a></span></span>
+                    </h4>
+                    <h5 class="text-muted">About {{ site.name }}</h5>
+                    <div class="author-description text-muted">{{ site.description }}</div>
+                    <div class="author-social">
+                        <ul class="author-social-icons">
+                            <li class="author-social-link-facebook"><a href="{{ site.facebook }}" target="_blank"><i class="ti-facebook"></i></a></li>
+                            <li class="author-social-link-twitter"><a href="{{ site.twitter }}" target="_blank"><i class="ti-twitter-alt"></i></a></li>
+                            <li class="author-social-link-instagram"><a href="{{ site.instagram }}" target="_blank"><i class="ti-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!--container-->
+</main>

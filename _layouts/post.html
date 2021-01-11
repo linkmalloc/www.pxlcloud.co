@@ -1,0 +1,286 @@
+---
+layout: default
+---
+
+    <!-- Start Main content -->
+    <main class="bg-grey pt-50 pb-50">
+        <div class="pb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="single-content2">
+                            <div class="entry-header entry-header-style-1 mb-50">
+                                <h1 class="entry-title mb-30 font-weight-900">
+                                    {{ page.title }}
+                                </h1>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="entry-meta align-items-center meta-2 font-small color-muted">
+                                            <p class="mb-5">
+                                                <a class="author-avatar" href="#"><img class="img-circle" src="http://via.placeholder.com/300x300" alt=""></a>
+                                                By <a href="author.html"><span class="author-name font-weight-bold">{{ page.author }}</span></a>
+                                            </p>
+                                            <span class="mr-10"> {{ page.date | date: '%B %d, %Y'}}</span>
+                                            <span class="has-dot"> 8 mins read</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 text-right d-none d-md-inline">
+                                        <ul class="header-social-network d-inline-block list-inline mr-15">
+                                            <li class="list-inline-item text-muted"><span>Share this: </span></li>
+                                            <li class="list-inline-item"><a class="social-icon fb text-xs-center" target="_blank" href="#"><i class="elegant-icon social_facebook"></i></a></li>
+                                            <li class="list-inline-item"><a class="social-icon tw text-xs-center" target="_blank" href="#"><i class="elegant-icon social_twitter "></i></a></li>
+                                            <li class="list-inline-item"><a class="social-icon pt text-xs-center" target="_blank" href="#"><i class="elegant-icon social_pinterest "></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end single header-->
+                            <figure class="image mb-30 m-auto text-center border-radius-10">
+                                <img class="border-radius-10" src="{{ page.image_big }}" alt="post-title" />
+                            </figure>
+                            <!--figure-->
+                            <article class="entry-wraper mb-50">
+                                <div class="entry-main-content dropcap wow fadeIn animated">
+                                    {{ content }}
+                                    <hr class="section-divider">
+                                    <p>Thanks sniffed in hello after in foolhardy and some far purposefully much one at the much conjointly leapt skimpily that quail sheep some goodness nightingale the instead exited expedient up far ouch mellifluous altruistic and and lighted more instead much when ferret but the.</p>
+                                    <!--Begin Subcrible-->
+                                    <div class="border-radius-10 border bg-white mb-30 p-30 wow fadeIn animated">
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-5 mb-2 mb-md-0">
+                                                <h5 class="font-weight-bold secondfont mb-30 mt-0">Become a member</h5>
+                                                <p class="font-small">Get the latest news right in your inbox. We never spam!</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <input type="text" class="form-control" placeholder="Enter your e-mail address">
+                                                    </div>
+                                                    <div class="col-md-12 mt-2">
+                                                        <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Subcrible-->
+                                    <p>Yet more some certainly yet alas abandonedly whispered intriguingly well extensive one howled talkative admonishingly below a rethought overlaid dear gosh activated less however hawk yet oh scratched ostrich some outside crud irrespective lightheartedly and much far amenably that the elephant since when.</p>
+                                </div>
+                                <div class="entry-bottom mt-50 mb-30 wow fadeIn animated">
+                                    <div class="tags">
+                                        <span>Tags: </span>
+                                        {% for tag in post.tags %}
+                                        {% capture tag_name %}{{ tag | first }}{% endcapture %}
+                                        <a href="{{site.baseurl}}/categories/#{{tag|slugize}}" rel="tag">{{ tag_name }}</a>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <div class="single-social-share clearfix wow fadeIn animated">
+                                    <div class="entry-meta meta-1 font-small color-grey float-left mt-10">
+                                        <span class="hit-count mr-15"><i class="elegant-icon icon_comment_alt mr-5"></i>182 comments</span>
+                                        <span class="hit-count mr-15"><i class="elegant-icon icon_like mr-5"></i>268 likes</span>
+                                        <span class="hit-count"><i class="elegant-icon icon_star-half_alt mr-5"></i>Rate: 9/10</span>
+                                    </div>
+                                    <ul class="header-social-network d-inline-block list-inline float-md-right mt-md-0 mt-4">
+                                        <li class="list-inline-item text-muted"><span>Share this: </span></li>
+                                        <li class="list-inline-item"><a class="social-icon fb text-xs-center" target="_blank" href="{{ site.facebook }}"><i class="elegant-icon social_facebook"></i></a></li>
+                                        <li class="list-inline-item"><a class="social-icon tw text-xs-center" target="_blank" href="{{ site.twitter }}"><i class="elegant-icon social_twitter "></i></a></li>
+                                        <li class="list-inline-item"><a class="social-icon ig text-xs-center" target="_blank" href="{{ site.instagram }}"><i class="elegant-icon social_instagram "></i></a></li>
+                                    </ul>
+                                </div>
+                                <!--author box-->
+                                <div class="author-bio p-30 mt-50 border-radius-10 bg-white wow fadeIn animated">
+                                    <div class="author-image mb-30">
+                                        <a href="author.html"><img src="http://via.placeholder.com/300x300" alt="" class="avatar"></a>
+                                    </div>
+                                    <div class="author-info">
+                                        <h4 class="font-weight-bold mb-20"><span class="vcard author"><span class="fn"><a href="author.html" title="Posted by Barbara Cartland" rel="author">Barbara Cartland</a></span></span>
+                                        </h4>
+                                        <h5 class="text-muted">About author</h5>
+                                        <div class="author-description text-muted">You should write because you love the shape of stories and sentences and the creation of different words on a page. </div>
+                                        <a href="author.html" class="author-bio-link mb-md-0 mb-3">View all posts (125)</a>
+                                        <div class="author-social">
+                                            <ul class="author-social-icons">
+                                                <li class="author-social-link-facebook"><a href="{{ site.facebook }}" target="_blank"><i class="ti-facebook"></i></a></li>
+                                                <li class="author-social-link-twitter"><a href="{{ site.twitter }}" target="_blank"><i class="ti-twitter-alt"></i></a></li>
+                                                <li class="author-social-link-instagram"><a href="{{ site.instagram }}" target="_blank"><i class="ti-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 primary-sidebar sticky-sidebar">
+                        <div class="widget-area">
+                            <div class="sidebar-widget widget-about mb-50 pt-30 pr-30 pb-30 pl-30 bg-white border-radius-5 has-border  wow fadeInUp animated">
+                                <img class="about-author-img mb-25" src="http://via.placeholder.com/300x300" alt="">
+                                <h5 class="mb-20">Hello, I'm Steven</h5>
+                                <p class="font-medium text-muted">Hi, I’m Stenven, a Florida native, who left my career in corporate wealth management six years ago to embark on a summer of soul searching that would change the course of my life forever.</p>
+                                <strong>Follow me: </strong>
+                                <ul class="header-social-network d-inline-block list-inline color-white mb-20">
+                                    <li class="list-inline-item"><a class="fb" href="#" target="_blank" title="Facebook"><i class="elegant-icon social_facebook"></i></a></li>
+                                    <li class="list-inline-item"><a class="tw" href="#" target="_blank" title="Tweet now"><i class="elegant-icon social_twitter"></i></a></li>
+                                    <li class="list-inline-item"><a class="pt" href="#" target="_blank" title="Pin it"><i class="elegant-icon social_pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-widget widget-latest-posts mb-50 wow fadeInUp animated">
+                                <div class="widget-header-1 position-relative mb-30">
+                                    <h5 class="mt-5 mb-30">Most popular</h5>
+                                </div>
+                                <div class="post-block-list post-module-1">
+                                    <ul class="list-post">
+                                        <li class="mb-30 wow fadeInUp animated">
+                                            <div class="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                <div class="post-content media-body">
+                                                    <h6 class="post-title mb-15 text-limit-2-row font-medium"><a href="single.html">Spending Some Quality Time with Kids? It’s Possible</a></h6>
+                                                    <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
+                                                        <span class="post-on">05 August</span>
+                                                        <span class="post-by has-dot">150 views</span>
+                                                    </div>
+                                                </div>
+                                                <div class="post-thumb post-thumb-80 d-flex ml-15 border-radius-5 img-hover-scale overflow-hidden">
+                                                    <a class="color-white" href="single.html">
+                                                        <img src="http://via.placeholder.com/500x500" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-30 wow fadeInUp animated">
+                                            <div class="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                <div class="post-content media-body">
+                                                    <h6 class="post-title mb-15 text-limit-2-row font-medium"><a href="single.html">Relationship Podcasts are Having “That” Talk</a></h6>
+                                                    <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
+                                                        <span class="post-on">12 August</span>
+                                                        <span class="post-by has-dot">6k views</span>
+                                                    </div>
+                                                </div>
+                                                <div class="post-thumb post-thumb-80 d-flex ml-15 border-radius-5 img-hover-scale overflow-hidden">
+                                                    <a class="color-white" href="single.html">
+                                                        <img src="http://via.placeholder.com/500x500" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-30 wow fadeInUp animated">
+                                            <div class="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                <div class="post-content media-body">
+                                                    <h6 class="post-title mb-15 text-limit-2-row font-medium"><a href="single.html">Here’s How to Get the Best Sleep at Night</a></h6>
+                                                    <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
+                                                        <span class="post-on">15 August</span>
+                                                        <span class="post-by has-dot">16k views</span>
+                                                    </div>
+                                                </div>
+                                                <div class="post-thumb post-thumb-80 d-flex ml-15 border-radius-5 img-hover-scale overflow-hidden">
+                                                    <a class="color-white" href="single.html">
+                                                        <img src="http://via.placeholder.com/500x500" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class=" wow fadeInUp animated">
+                                            <div class="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                <div class="post-content media-body">
+                                                    <h6 class="post-title mb-15 text-limit-2-row font-medium"><a href="single.html">America’s Governors Get Tested for a Virus That Is Testing Them</a></h6>
+                                                    <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
+                                                        <span class="post-on">12 August</span>
+                                                        <span class="post-by has-dot">3k views</span>
+                                                    </div>
+                                                </div>
+                                                <div class="post-thumb post-thumb-80 d-flex ml-15 border-radius-5 img-hover-scale overflow-hidden">
+                                                    <a class="color-white" href="single.html">
+                                                        <img src="http://via.placeholder.com/500x500" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sidebar-widget widget-latest-posts mb-50 wow fadeInUp animated">
+                                <div class="widget-header-1 position-relative mb-30">
+                                    <h5 class="mt-5 mb-30">Last comments</h5>
+                                </div>
+                                <div class="post-block-list post-module-2">
+                                    <ul class="list-post">
+                                        <li class="mb-30 wow fadeInUp animated">
+                                            <div class="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                <div class="post-thumb post-thumb-64 d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
+                                                    <a class="color-white" href="single.html">
+                                                        <img src="http://via.placeholder.com/300x300" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="post-content media-body">
+                                                    <p class="mb-10"><a href="author.html"><strong>David</strong></a>
+                                                        <span class="ml-15 font-small text-muted has-dot">16 Jan 2020</span>
+                                                    </p>
+                                                    <p class="text-muted font-small">A writer is someone for whom writing is more difficult than...</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-30 wow fadeInUp animated">
+                                            <div class="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                <div class="post-thumb post-thumb-64 d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
+                                                    <a class="color-white" href="single.html">
+                                                        <img src="http://via.placeholder.com/300x300" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="post-content media-body">
+                                                    <p class="mb-10"><a href="author.html"><strong>Kokawa</strong></a>
+                                                        <span class="ml-15 font-small text-muted has-dot">12 Feb 2020</span>
+                                                    </p>
+                                                    <p class="text-muted font-small">Striking pewter studded epaulettes silver zips</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="wow fadeInUp animated">
+                                            <div class="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                <div class="post-thumb post-thumb-64 d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
+                                                    <a class="color-white" href="single.html">
+                                                        <img src="http://via.placeholder.com/500x500" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="post-content media-body">
+                                                    <p class="mb-10"><a href="author.html"><strong>Tsukasi</strong></a>
+                                                        <span class="ml-15 font-small text-muted has-dot">18 May 2020</span>
+                                                    </p>
+                                                    <p class="text-muted font-small">Workwear bow detailing a slingback buckle strap</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sidebar-widget widget_instagram wow fadeInUp animated">
+                                <div class="widget-header-1 position-relative mb-30">
+                                    <h5 class="mt-5 mb-30">Instagram</h5>
+                                </div>
+                                <div class="instagram-gellay">
+                                    <ul class="insta-feed">
+                                        <li>
+                                            <a href="/assets/imgs/thumbnail-3.jpg" class="play-video" data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><img class="border-radius-5" src="http://via.placeholder.com/500x500" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/assets/imgs/thumbnail-4.jpg" class="play-video" data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><img class="border-radius-5" src="http://via.placeholder.com/500x500" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/assets/imgs/thumbnail-5.jpg" class="play-video" data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><img class="border-radius-5" src="http://via.placeholder.com/500x500" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/assets/imgs/thumbnail-3.jpg" class="play-video" data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><img class="border-radius-5" src="http://via.placeholder.com/500x500" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/assets/imgs/thumbnail-4.jpg" class="play-video" data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><img class="border-radius-5" src="http://via.placeholder.com/500x500" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/assets/imgs/thumbnail-5.jpg" class="play-video" data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><img class="border-radius-5" src="http://via.placeholder.com/500x500" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
