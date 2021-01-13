@@ -3,7 +3,6 @@ layout: post
 title: 7 REASONS WHY YOU NEED A BUSINESS WEBSITE
 categories:
   - web
-  - case_studies
 tags:
   - featured
 author: EMANUEL HENRIQUES
