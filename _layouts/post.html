@@ -21,7 +21,7 @@ layout: default
                                                 By <a href="author.html"><span class="author-name font-weight-bold">{{ page.author }}</span></a>
                                             </p>
                                             <span class="mr-10"> {{ page.date | date: '%B %d, %Y'}}</span>
-                                            <span class="has-dot"> 8 mins read</span>
+                                            <span class="has-dot"> {{ page.read_time }} read</span>
                                         </div>
                                     </div>
                                     <div class="col-md-6 text-right d-none d-md-inline">
@@ -36,7 +36,7 @@ layout: default
                             </div>
                             <!--end single header-->
                             <figure class="image mb-30 m-auto text-center border-radius-10">
-                                <img class="border-radius-10" src="{{ page.image_big }}" alt="post-title" />
+                                <img class="border-radius-10" src="{{ page.img_big_1000x600 }}" alt="post-title" />
                             </figure>
                             <!--figure-->
                             <article class="entry-wraper mb-50">
@@ -89,21 +89,27 @@ layout: default
                                     </ul>
                                 </div>
                                 <!--author box-->
+                                {% assign author = site.author %}
+                                {% for author_list in site.authors %}
+                                    {% if author_list.name == page.author %}
+                                        {% assign author = author_list %}
+                                    {% endif %}
+                                {% endfor %}
                                 <div class="author-bio p-30 mt-50 border-radius-10 bg-white wow fadeIn animated">
                                     <div class="author-image mb-30">
-                                        <a href="author.html"><img src="http://via.placeholder.com/300x300" alt="" class="avatar"></a>
+                                        <a href="{{ author.url }}"><img src="{{ author.img_300x300 }}" alt="" class="avatar"></a>
                                     </div>
                                     <div class="author-info">
-                                        <h4 class="font-weight-bold mb-20"><span class="vcard author"><span class="fn"><a href="author.html" title="Posted by Barbara Cartland" rel="author">Barbara Cartland</a></span></span>
+                                        <h4 class="font-weight-bold mb-20"><span class="vcard author"><span class="fn"><a href="{{ author.url }}" title="Posted by {{ author.name  }}" rel="author">{{ author.name }}</a></span></span>
                                         </h4>
                                         <h5 class="text-muted">About author</h5>
-                                        <div class="author-description text-muted">You should write because you love the shape of stories and sentences and the creation of different words on a page. </div>
-                                        <a href="author.html" class="author-bio-link mb-md-0 mb-3">View all posts (125)</a>
+                                        <div class="author-description text-muted">{{ author.description }}</div>
+                                        <a href="{{ author.url }}" class="author-bio-link mb-md-0 mb-3">View all posts ({{ author.posts_count }})</a>
                                         <div class="author-social">
                                             <ul class="author-social-icons">
-                                                <li class="author-social-link-facebook"><a href="{{ site.facebook }}" target="_blank"><i class="ti-facebook"></i></a></li>
-                                                <li class="author-social-link-twitter"><a href="{{ site.twitter }}" target="_blank"><i class="ti-twitter-alt"></i></a></li>
-                                                <li class="author-social-link-instagram"><a href="{{ site.instagram }}" target="_blank"><i class="ti-instagram"></i></a></li>
+                                                <li class="author-social-link-facebook"><a href="{{ author.facebook }}" target="_blank"><i class="ti-facebook"></i></a></li>
+                                                <li class="author-social-link-twitter"><a href="{{ author.twitter }}" target="_blank"><i class="ti-twitter-alt"></i></a></li>
+                                                <li class="author-social-link-instagram"><a href="{{ author.instagram }}" target="_blank"><i class="ti-instagram"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -115,7 +121,7 @@ layout: default
                         <div class="widget-area">
                             <div class="sidebar-widget widget-about mb-50 pt-30 pr-30 pb-30 pl-30 bg-white border-radius-5 has-border  wow fadeInUp animated">
                                 <img class="about-author-img mb-25" src="http://via.placeholder.com/300x300" alt="">
-                                <h5 class="mb-20">Hello, I'm Steven</h5>
+                                <h5 class="mb-20">Hello, We're PXL</h5>
                                 <p class="font-medium text-muted">Hi, I’m Stenven, a Florida native, who left my career in corporate wealth management six years ago to embark on a summer of soul searching that would change the course of my life forever.</p>
                                 <strong>Follow me: </strong>
                                 <ul class="header-social-network d-inline-block list-inline color-white mb-20">

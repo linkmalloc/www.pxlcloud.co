@@ -87,10 +87,12 @@ layout: default
                         </div>
                     </div>
                 </div>
+                {% for article in site.posts %}
+                {% if article.categories contains "case_studies" %}
                 <article class="col-lg-4 col-md-6 mb-30 wow fadeInUp animated" data-wow-delay="0.2s">
                     <div class="post-card-1 border-radius-10 hover-up">
-                        <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url(http://via.placeholder.com/1000x600)">
-                            <a class="img-link" href="single.html"></a>
+                        <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url({{ article.img_big_1000x600 }})">
+                            <a class="img-link" href="{{ article.url }}"></a>
                             <span class="top-right-icon bg-success"><i class="elegant-icon icon_camera_alt"></i></span>
                             <ul class="social-share">
                                 <li><a href="#"><i class="elegant-icon social_share"></i></a></li>
@@ -106,17 +108,19 @@ layout: default
                             </div>
                             <div class="d-flex post-card-content">
                                 <h5 class="post-title mb-20 font-weight-900">
-                                    <a href="single.html">Want fluffy Japanese pancakes but can’t fly to Tokyo?</a>
+                                    <a href="{{ article.url }}">{{ article.title }}</a>
                                 </h5>
                                 <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
-                                    <span class="post-on">27 August</span>
-                                    <span class="time-reading has-dot">12 mins read</span>
-                                    <span class="post-by has-dot">23k views</span>
+                                    <span class="post-on">{{ article.date | date_to_string }}</span>
+                                    <span class="time-reading has-dot">{{ article.read_time }}</span>
+                                    <span class="post-by has-dot">{{ article.views }}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </article>
+                {% endif %}
+                {% endfor %}
                 <article class="col-lg-4 col-md-6 mb-30 wow fadeInUp animated">
                     <div class="post-card-1 border-radius-10 hover-up">
                         <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url(http://via.placeholder.com/1000x600)">
@@ -497,7 +501,7 @@ layout: default
                     <div class="widget-area">
                         <div class="sidebar-widget widget-about mb-50 pt-30 pr-30 pb-30 pl-30 bg-white border-radius-5 has-border  wow fadeInUp animated">
                             <img class="about-author-img mb-25" src="http://via.placeholder.com/300x300" alt="">
-                            <h5 class="mb-20">Hello, I'm Steven</h5>
+                            <h5 class="mb-20">Hello, We're PXL</h5>
                             <p class="font-medium text-muted">Hi, I’m Stenven, a Florida native, who left my career in corporate wealth management six years ago to embark on a summer of soul searching that would change the course of my life forever.</p>
                             <strong>Follow me: </strong>
                             <ul class="header-social-network d-inline-block list-inline color-white mb-20">
