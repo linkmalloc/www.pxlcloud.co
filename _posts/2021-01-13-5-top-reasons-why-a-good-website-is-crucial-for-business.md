@@ -7,6 +7,7 @@ categories:
 tags:
   - news
   - website
+  - tips
 author: Sylvia Browder
 read_time: 5 mins
 views: "10"
