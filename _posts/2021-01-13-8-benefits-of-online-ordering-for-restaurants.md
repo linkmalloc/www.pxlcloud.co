@@ -8,6 +8,7 @@ tags:
   - restaurant
   - reasons
   - food
+  - tips
 author: Allison Tardelli
 read_time: 6 mins
 views: "10"
