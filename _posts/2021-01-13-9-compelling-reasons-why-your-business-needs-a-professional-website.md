@@ -6,6 +6,7 @@ categories:
   - case_studies
 tags:
   - news
+  - tips
 author: X
 read_time: 10 mins
 views: "10"
