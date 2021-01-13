@@ -9,7 +9,7 @@ tags:
 author: X
 read_time: 10 mins
 views: "10"
-img_big_1000x600: https://res.cloudinary.com/linkmalloc/image/upload/w_1000.h_600,c_fit/v1610511712/12_qofjkc.png
+img_big_1000x600: https://res.cloudinary.com/linkmalloc/image/upload/w_1000,h_600,c_fit/v1610511712/12_qofjkc.png
 ---
 If you’re a small business owner or you’re just starting out, like many, you may think there’s no benefit in having a website when you can do everything on social media. Or maybe you think you can’t afford a professional website so you get a freebie and do it yourself instead.\
 Perhaps you’re in the generation that didn’t grow up with computers, you don’t use a computer so you think your customers don’t use computers. You think if you are not tech savvy why bother with a website. But even if you are an established business that has relied on word of mouth and think you are doing quite well thank you, there are several reasons why your business needs a professional website too.\
