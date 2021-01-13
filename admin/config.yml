@@ -16,7 +16,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Categories", name: "categories", widget: "string", required: false}
-      - {label: "Tags", name: "tags", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", default: ["news"], required: false}
       - {label: "Author", name: "author", widget: "string", required: false}
       - {label: "Read Time", name: "read_time", widget: "string", required: false}
       - {label: "Photo", name: "img_big_1000x600", widget: "string", required: false}
