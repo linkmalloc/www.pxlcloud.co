@@ -8,7 +8,7 @@ tags:
   - featured
 author: Vival
 read_time: 5 mins
-img_big_1000x600: ttps://res.cloudinary.com/linkmalloc/image/upload/w_1000,h_600,c_fit/v1610507662/website1.png
+img_big_1000x600: https://res.cloudinary.com/linkmalloc/image/upload/w_1000,h_600,c_fit/v1610507662/website1.png
 ---
 
 There’s no question about it. To compete in today’s uber competitive market you need a strong online presence. We are not just talking about a DIY-website and a Facebook page. Instead, you need a well thought out, optimized marketing strategy that includes online, social and mobile components. Why? Because this is where your consumers are searching. In fact, the average consumer will consult 10.4 sources before making a purchase. And for the first time EVER, digital ad spend will surpass traditional marketing efforts.
