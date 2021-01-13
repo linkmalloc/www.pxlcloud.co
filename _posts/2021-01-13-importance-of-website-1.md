@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Importance of Website
+title: Why Are Websites Important
 categories:
   - web
   - case_studies
