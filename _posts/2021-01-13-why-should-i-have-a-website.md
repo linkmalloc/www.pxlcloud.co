@@ -3,7 +3,6 @@ layout: post
 title: Why Should I Have a Website
 categories:
   - web
-  - case_studies
 tags:
   - featured
 author: X
