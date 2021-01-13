@@ -71,7 +71,7 @@ rss: rss
 
 author: 
   name: Link Malloc Admin
-  img_300x300: http://via.placeholder.com/300x300
+  img_300x300: https://via.placeholder.com/300x300
   description: We help business like you grow and thrive in the online world. 
   url: /
   posts_count: 300
