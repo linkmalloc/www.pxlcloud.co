@@ -5,8 +5,10 @@ categories:
   - web
 tags:
   - featured
+  - tips
 author: X
 read_time: 5 mins
+views: "800"
 img_big_1000x600: https://res.cloudinary.com/linkmalloc/image/upload/w_1000,h_600,c_fit/v1610511711/10_yccwnc.png
 ---
 At the end of 2011 about 245 million people (~80% of population) were online in the United States and about 10% of all website access was being done through mobile devices. In an interconnected world, it’s more important than ever to have a great website. Let’s look at 10 reasons why you should have a top notch website…
