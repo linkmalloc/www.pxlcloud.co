@@ -5,6 +5,7 @@ categories:
   - web
 tags:
   - featured
+  - tips
 author: EMANUEL HENRIQUES
 read_time: 6 mins
 img_big_1000x600: https://res.cloudinary.com/linkmalloc/image/upload/w_1000,h_600,c_fit/v1610511716/9_rxwfsl.png
