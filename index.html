@@ -114,7 +114,7 @@ layout: default
                                 </h5>
                                 <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
                                     <span class="post-on">{{ article.date | date_to_string }}</span>
-                                    <span class="time-reading has-dot">{{ article.read_time }}</span>
+                                    <span class="time-reading has-dot">{{ article.read_time }} read</span>
                                     <span class="post-by has-dot">{{ article.views }} views </span>
                                 </div>
                             </div>
@@ -136,7 +136,7 @@ layout: default
                         </div>
                         <div class="loop-list loop-list-style-1">
                             <div class="row">
-                                {% for article in site.posts limit: 6%}
+                                {% for article in site.posts limit:6 %}
                                 {% if article.tags contains "tips" %}
                                 <article class="col-md-6 mb-40 wow fadeInUp  animated">
                                     <div class="post-card-1 border-radius-10 hover-up">
@@ -166,7 +166,7 @@ layout: default
                                                     <a href="{{ article.url }}">{{ article.title }}</a>
                                                 </h5>
                                                 <div class="post-excerpt mb-25 font-small text-muted">
-                                                    <p>{{ article.content | truncate: 30 }}</p>
+                                                    <p>{{ article.content | truncate: 150 }}</p>
                                                 </div>
                                                 <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
                                                     <span class="post-on">{{ article.date | date_to_string }}t</span>
