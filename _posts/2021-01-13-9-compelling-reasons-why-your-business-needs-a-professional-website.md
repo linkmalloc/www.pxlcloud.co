@@ -9,7 +9,7 @@ tags:
   - tips
 author: X
 read_time: 10 mins
-views: "10"
+views: 1.2k
 img_big_1000x600: https://res.cloudinary.com/linkmalloc/image/upload/w_1000,h_600,c_fit/v1610511712/12_qofjkc.png
 ---
 If you’re a small business owner or you’re just starting out, like many, you may think there’s no benefit in having a website when you can do everything on social media. Or maybe you think you can’t afford a professional website so you get a freebie and do it yourself instead.\
