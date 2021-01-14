@@ -5,8 +5,10 @@ categories:
   - case_studies
 tags:
   - news
+  - tips
 author: Blue Corona
 read_time: 10 mins
+views: 2.1k
 img_big_1000x600: https://res.cloudinary.com/linkmalloc/image/upload/w_1000,h_600,c_fit/v1610503742/website.png
 ---
 If you’re a business owner on the fence about creating a website, I’ll save you some time—you need one. A good one. A professionally designed, lead-catching, sales-increasing, brand-differentiating website.
