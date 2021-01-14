@@ -5,7 +5,7 @@ categories:
   - web
   - restaurants
 tags:
-  - news
+  - tips
   - restaurant
   - food
   - business
