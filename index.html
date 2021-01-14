@@ -169,7 +169,7 @@ layout: default
                                                     <p>{{ article.content | truncate: 150 }}</p>
                                                 </div>
                                                 <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
-                                                    <span class="post-on">{{ article.date | date_to_string }}t</span>
+                                                    <span class="post-on">{{ article.date | date_to_string }}</span>
                                                     <span class="time-reading has-dot">{{ article.read_time }} read</span>
                                                     <span class="post-by has-dot">{{ article.views }} views</span>
                                                 </div>
@@ -253,10 +253,8 @@ layout: default
                         <div
                             class="sidebar-widget widget-about mb-50 pt-30 pr-30 pb-30 pl-30 bg-white border-radius-5 has-border  wow fadeInUp animated">
                             <img class="about-author-img mb-25" src="https://via.placeholder.com/300x300" alt="">
-                            <h5 class="mb-20">Hello, We're PXL</h5>
-                            <p class="font-medium text-muted">Hi, I’m Stenven, a Florida native, who left my career in
-                                corporate wealth management six years ago to embark on a summer of soul searching that
-                                would change the course of my life forever.</p>
+                            <h5 class="mb-20">Hello, {{ site.hi }}</h5>
+                            <p class="font-medium text-muted">Hi, {{ site.hi }}, {{ site.we_are }} </p>
                             <strong>Follow me: </strong>
                             <ul class="header-social-network d-inline-block list-inline color-white mb-20">
                                 <li class="list-inline-item"><a class="fb" href="#" target="_blank" title="Facebook"><i
