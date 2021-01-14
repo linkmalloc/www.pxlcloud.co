@@ -11,7 +11,7 @@ tags:
   - tips
 author: Allison Tardelli
 read_time: 6 mins
-views: "10"
+views: 1.3k
 img_big_1000x600: https://res.cloudinary.com/linkmalloc/image/upload/w_1000,h_600,c_fit/v1610557954/website_1_htkqmj.png
 ---
 Life in a digital world has made people accustomed to the convenience of getting whatever they want or need with just a few clicks of a button. Customers now expect their favorite restaurant to offer online ordering. Has your business implemented an online ordering system? If not, then it’s time to learn about the benefits of online ordering.
