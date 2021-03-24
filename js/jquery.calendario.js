@@ -1,12 +1,12 @@
 /**
  * jquery.calendario.js v3.2.0
- * http://www.codrops.com
+ * https://www.codrops.com
  *
  * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
+ * https://www.opensource.org/licenses/mit-license.php
  *
  * Copyright 2014, Codrops
- * http://www.codrops.com
+ * https://www.codrops.com
  *
  * || Notable Changes ||
  * Calendario gets more flexible : Boží Ďábel (https://github.com/deviprsd21) (https://github.com/codrops/Calendario/pull/11)
@@ -172,7 +172,7 @@
 	  });
 	},
 
-	// Calendar logic based on http://jszen.blogspot.pt/2007/03/how-to-build-simple-calendar-with.html
+	// Calendar logic based on https://jszen.blogspot.pt/2007/03/how-to-build-simple-calendar-with.html
 	_generateTemplate : function(firstRun, callback) {
 	  var head = this._getHead(),
 		  body = this._getBody(),

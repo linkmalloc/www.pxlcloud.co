@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2009 Joel Sutherland
  * Licenced under the MIT license
- * http://www.newmediacampaigns.com/page/jquery-flickr-plugin
+ * https://www.newmediacampaigns.com/page/jquery-flickr-plugin
  *
  * Available tags for templates:
  * title, link, date_taken, description, published, author, author_id, tags, image*

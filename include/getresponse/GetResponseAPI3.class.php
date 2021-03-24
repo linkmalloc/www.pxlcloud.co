@@ -6,7 +6,7 @@
  * @author Pawel Maslak <pawel.maslak@getresponse.com>
  * @author Grzegorz Struczynski <grzegorz.struczynski@implix.com>
  *
- * @see http://apidocs.getresponse.com/en/v3/resources
+ * @see https://apidocs.getresponse.com/en/v3/resources
  * @see https://github.com/GetResponse/getresponse-api-php
  */
 class GetResponse

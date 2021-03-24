@@ -1,12 +1,12 @@
-title: Link Malloc | Demo Websites | Canva
-email: info@linkmalloc.com
-phone: +639190690501
+title: PXL Cloud | Demo Websites | Canva
+email: happy@pxlcloud.co
+phone: +12133285272
 lmic: www.linkmalloc.com
-image: https://demos.linkmalloc.com/images/intro/new/hero.jpg
+image: https://pxlcloud.co/images/intro/new/hero.jpg
 description: >- # this means to ignore newlines until "baseurl:"
-  Link Malloc Showcases what the web can do. Demo Websites you can choose from.
+  PXL Cloud Showcases what the web can do. Demo Websites you can choose from.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. https://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 

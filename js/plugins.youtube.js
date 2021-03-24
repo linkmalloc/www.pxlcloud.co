@@ -2,7 +2,7 @@
  _ jquery.mb.components
  _ email: matbicoc@gmail.com
  _ Copyright (c) 2001-2020. Matteo Bicocchi (Pupunzi);
- _ blog: http://pupunzi.open-lab.com
+ _ blog: https://pupunzi.open-lab.com
  _ Open Lab s.r.l., Florence - Italy
  */
 
